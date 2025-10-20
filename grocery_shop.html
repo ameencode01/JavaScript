@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Small Grocery Shop</title>
+    </head>
+    <body>
+        <script>
+            var itemRice = "Rice";
+            var itemSugar = "Sugar";
+            var itemWheat = "Wheat";
+
+            var ricePrice = 60;
+            var sugarPrice = 45;
+            var wheatPrice = 50;
+
+            var riceQuantity = 5;
+            var sugarQuantity = 3;
+            var wheatQuantity = 7;
+
+            var costRice = (ricePrice * riceQuantity);
+            var costSugar = (sugarPrice * sugarQuantity);
+            var costWheat = (wheatPrice * wheatQuantity);
+
+            var totalBill = (costRice+costSugar+costWheat);
+
+            console.log(itemRice+" cost: ₹"+costRice)
+            console.log(itemSugar+" cost: ₹"+costSugar)
+            console.log(itemWheat+" cost: ₹"+costWheat)
+            console.log("Total bill is: ₹"+totalBill)
+
+            sugarQuantity = 6;
+
+            costSugar = (sugarPrice * sugarQuantity);
+
+            totalBill = (costRice+costSugar+costWheat);
+
+            console.log("Updated "+itemSugar+" cost: ₹"+costSugar)
+            console.log("Updated total bill is: ₹"+totalBill)
+        </script>
+    </body>
+</html>
