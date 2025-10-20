@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Small Online Store</title>
+    </head>
+    <body>
+
+        <h1>Online Store</h1>
+        <h3>Before Updating</h3>
+
+        <p>Price of a tshirt = ₹400</p>
+        <p>Quantity of tshirts = 5</p>
+
+        <p>Price of a cap = ₹150</p>
+        <p>Quantity of caps = 3</p>
+        <p id="total"></p>
+        <br>
+
+        <h3>After Updating</h3>
+
+        <p>Price of a tshirt = ₹450</p>
+        <p>Quantity of tshirts = 5</p>
+
+        <p>Price of a cap = ₹150</p>
+        <p>Quantity of caps = 3</p>
+        <p id="updated_total"></p>
+
+        <script>
+            var tshirtQuantity = 5;
+            var tshirtPrice = 400;
+
+            var capQuantity = 3;
+            var capPrice = 150;
+
+            var totalEarning = (tshirtQuantity * tshirtPrice) + (capQuantity * capPrice);
+            document.getElementById("total").innerHTML= "Total earning is: ₹"+totalEarning
+
+            tshirtPrice = 450;
+
+            var updatedTotalEarning = (tshirtQuantity * tshirtPrice) + (capQuantity * capPrice);
+            document.getElementById("updated_total").innerHTML= "Updated total earning is: ₹"+updatedTotalEarning    
+        </script>
+    </body>
+</html>
